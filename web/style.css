@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::placeholder {
+  color: #7744d5;
+  font-weight: bold;
+}
+.navbar {
+  background: #7744d5;
+}
+i {
+  color: #fff;
+  font-size: 25px;
+}
+#channel-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#channel-form input {
+  border: 1px solid #7744d5;
+  border-radius: 10px;
+  font-weight: bold;
+  outline: none;
+  background: none;
+}
+#channel-form button[type="submit"] {
+  background: #7744d5;
+  color: #fff;
+}
+#channel-form button[type="submit"]:hover {
+  background: none;
+}
+#messages-container {
+  list-style: none;
+}
+.btn {
+  margin: 0;
+  padding: 2px;
+}
+.message,
+.channel {
+  border: 2px solid #7744d5;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 30px;
+}
+.message img {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #7744d5;
+  border-radius: 20px;
+}
+.channel img {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #7744d5;
+  border-radius: 40px;
+}
+.purple {
+  color: #7744d5;
+  font-weight: bold;
+}
+.red {
+  color: #f00;
+}
+.dark {
+  background: #000;
+  color: #fff;
+}
+.channel {
+  display: flex;
+  justify-content: space-evenly;
+}
+.channel .streamer-icon {
+  color: #f00;
+}
+.channel p {
+  font-weight: bold;
+}
+.channel button {
+  background: #7744d5;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 15px;
+}
+.channel button:hover {
+  border: 1px solid #7744d5;
+  font-weight: bold;
+}
+.clear-recent-channels-button {
+  color: #fff;
+  background: #7744d5;
+  font-weight: bold;
+}
+.clear-recent-channels-button i {
+  color: #fff;
+}
+#channel-name-text {
+  border-top: 2px solid #7744d5;
+  border-bottom: 2px solid #7744d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#view-channel-name {
+  color: #7744d5;
+  font-weight: bold;
+}
+#recent-channels-title {
+  text-align: center;
+  border-bottom: 2px solid #7744d5;
+  border-top: 2px solid #7744d5;
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  #channel-form-input {
+    color: #000;
+  }
+  .btn-toggle-mode {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+    color: #fff;
+  }
+  #channel-form input {
+    color: #fff;
+  }
+  .btn-toggle-mode {
+    display: none;
+  }
+}

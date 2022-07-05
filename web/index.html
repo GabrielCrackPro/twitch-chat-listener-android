@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://icones.pro/wp-content/uploads/2021/05/symbole-twitch-logo-icone-violet-300x300.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Twitch Chat Listener</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html">
+          <i class="bi bi-twitch text-white"></i>
+          Twitch Chat Listener
+        </a>
+      </div>
+    </nav>
+    <form id="channel-form" class="mt-2">
+      <input
+        type="text"
+        spellcheck="off"
+        name="channel-name"
+        id="channel-name"
+        class="me-2 text-center"
+        placeholder="Channel"
+      />
+      <button type="submit" class="btn btn-sm btn-purple">
+        <i class="bi bi-chat-dots-fill"></i> Connect
+      </button>
+    </form>
+    <p id="channel-name-text" class="mt-2">
+      <i class="bi bi-camera-video-fill me-2"></i> Type channel name
+    </p>
+    <ul id="messages-container"></ul>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./tmi.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
